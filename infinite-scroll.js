@@ -1,7 +1,7 @@
 var catCon = $('#CategoryContent ul.ProductList');
 var speedBump = 1;
 var pageIndex = 2;
-var maxPages = $('.productlist-page .product-nav:first li:not(.ActivePage)').length;
+var maxPages = $('.productlist-page .product-nav:first li:not(.ActivePage)').length + 1;
 var nextPgUrl = 'http://dankstop.com/concentrate-pipes-and-dab-rigs/?page=';
 
 
@@ -10,14 +10,16 @@ $('.productlist-page .product-nav').hide();
 scrollDetector();
 
 function scrollDetector() {
+/*
 	if (pageIndex > maxPages) {
 		return;
 	}	
+*/
 	$(window).scroll( function() {
 		var scrollT = $(window).scrollTop();
 		var windowH = $(window).height();
 		var docH = $(document).height();
-		if ( (scrollT > (docH - (windowH * 3.5))) && (scrollT < (docH - (windowH * 3))) && (speedBump == 1) ) {
+		if ( (scrollT > (docH - (windowH * 3.5))) && (scrollT < (docH - (windowH * 3))) && (speedBump == 1) && (pageIndex <= maxPages) ) {
 			speedBump = 0;
 			console.log($(window).scrollTop());
 			console.log($(document).height() - ($(window).height() * 3));
