@@ -70,8 +70,8 @@ BC Category Pagination
 ##Resources
 
 - [5 jQuery Infinite Scrolling Demos: Infinite Scrolling Demo 2](http://www.sitepoint.com/jquery-infinite-scrolling-demos/)
-- []()
-- []()
+- [Infinite Scroll jQuery Plugin by Paul Irish and Luke Shumard](http://www.infinite-scroll.com/)
+- [Infinite scrolling inside a div with AJAX (jQuery) loaded date](http://stackoverflow.com/questions/6311269/infinite-scrolling-inside-a-div-with-ajax-jquery-loaded-date)
 
 ------------------------------------------------------------------------------------
 
