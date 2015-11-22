@@ -30,7 +30,7 @@ function scrollDetector() {
 				console.log(pageIndex);
 				pageIndex++;
 				speedBump = 1;
-				//$(data).appendTo(this);
+				$(data).appendTo(this);
 				//console.log(data);
 			});
 	/*
